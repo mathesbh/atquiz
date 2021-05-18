@@ -3,7 +3,40 @@
 }
 
 body{
-  width: 0;
+  margin: 0;
   padding: 0;
+  max-width: 100vw;
+  max-height: 100vh;
   box-sizing: border-box;
+}
+
+header nav{
+  display: flex;
+  align-items: center;
+}
+
+header nav .brand{
+  background-color: #44005c;
+  color: white;
+  padding: 1% 3%;
+  margin: 1%;
+}
+
+header nav .menu{
+  margin-left: 3%;
+  font-weight: 300;
+}
+
+header nav .menu a{
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+}
+
+header nav .menu a:hover{
+  color: #44005c;
+}
+
+header nav .menu .active{
+  border-bottom: 2px solid #44005c;
 }
