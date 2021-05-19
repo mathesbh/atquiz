@@ -12,6 +12,7 @@ body{
 
 header nav{
   display: flex;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -37,6 +38,48 @@ header nav .menu a:hover{
   color: #44005c;
 }
 
-header nav .menu .active{
-  border-bottom: 2px solid #44005c;
+main{
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+main form{
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  padding: 1.2em;
+  width: 320px;
+  border: 2px solid #44005c;
+  border-radius: 15px;
+}
+
+main form h4{
+  text-align: center;
+  margin: 0 0 1em 0;
+}
+
+main form input {
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  padding: 5px;
+}
+
+main form button{
+  display: flex;
+  align-self: flex-end;
+  justify-content: center;
+  width: 100px;
+  height: 30px;
+  background-color: #44005c;
+  color: white;
+  border: 1px solid #44005c;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.err{
+  margin: 0;
+  font-size: 0.8em;
+  color: red;
 }
