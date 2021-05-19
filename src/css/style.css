@@ -89,3 +89,26 @@ main form button{
   font-size: 0.9em;
   border-bottom: 1px solid #44005c;
 }
+
+table{
+  margin: 2%;
+}
+
+table th{
+  background-color: #d3d3d3;
+}
+
+table th, td{
+  padding: 1%;
+  text-align: center;
+}
+
+tbody > tr:nth-child(even) {
+  background-color: #d3d3d3;
+}
+
+table #btn-show, #btn-answer{
+  border: none;
+  cursor: pointer;
+  color: #44005c;
+}
