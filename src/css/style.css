@@ -83,3 +83,9 @@ main form button{
   font-size: 0.8em;
   color: red;
 }
+
+#quiz{
+  font-style: italic;
+  font-size: 0.9em;
+  border-bottom: 1px solid #44005c;
+}
