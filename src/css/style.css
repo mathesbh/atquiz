@@ -65,7 +65,7 @@ main form input {
   padding: 5px;
 }
 
-main form button{
+main form button, #btn-answer{
   display: flex;
   align-self: flex-end;
   justify-content: center;
@@ -107,8 +107,31 @@ tbody > tr:nth-child(even) {
   background-color: #d3d3d3;
 }
 
-table #btn-show, #btn-answer{
+table #btn-show, #btn-resp{
   border: none;
   cursor: pointer;
   color: #44005c;
+}
+
+main .container{
+  padding: 1.2em;
+  margin: 2%;
+  border: 2px solid #44005c;
+  border-radius: 10px;
+}
+
+#showQuiz, #showAnswers{
+  margin-bottom: 3%;
+}
+
+#showQuiz h4, p{
+  margin: 0;
+}
+
+#showAnswers h4{
+  margin: 0;
+}
+
+#showAnswers p {
+  margin-bottom: 2%;
 }

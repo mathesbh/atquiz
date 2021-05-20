@@ -20,7 +20,7 @@ const showQuestionnaries = (data) => {
     const btn = document.createElement('i');
     const btn1 = document.createElement('i');
     btn.classList.add('fas', 'fa-reply');
-    btn.id = 'btn-answer';
+    btn.id = 'btn-resp';
     btn.setAttribute('onclick', `answerQuiz(${element.id})`);
     btn1.classList.add('fas', 'fa-search-plus')
     btn1.id = 'btn-show';
@@ -37,9 +37,9 @@ const showQuestionnaries = (data) => {
 }
 
 function answerQuiz(id){
-  window.location.href = `../src/screens/answers.html?id=${id}`
+  window.location.href = `../src/screens/answers.html?id=${id}`;
 } 
 
 function showQuiz(id){
-  window.location.href = `../src/screens/showQuiz.html?id=${id}`
+  window.location.href = `../src/screens/showQuiz.html?id=${id}`;
 }
