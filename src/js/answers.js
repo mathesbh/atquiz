@@ -2,8 +2,8 @@ const id = location.search.split('=')[1];
 const questionnaireId = parseInt(id);
 const urlGetQuiz = 'https://localhost:5001/api/questionnaires';
 const urlPostAnswers = 'https://localhost:5001/api/answers';
-let latitude = null;
-let longitude = null;
+let latitude = 0;
+let longitude = 0;
 
 function getQuiz(){
   fetch(`${urlGetQuiz}/${questionnaireId}`)
