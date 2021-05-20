@@ -1,4 +1,4 @@
-const url = "https://localhost:5001/api/questionnaires";
+const url = "https://atquiz-api.herokuapp.com/api/questionnaires";
 
 const btnCreate = document.querySelector('#btn-create');
 btnCreate.onclick = create => {

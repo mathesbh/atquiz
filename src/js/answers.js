@@ -1,7 +1,7 @@
 const id = location.search.split('=')[1];
 const questionnaireId = parseInt(id);
-const urlGetQuiz = 'https://localhost:5001/api/questionnaires';
-const urlPostAnswers = 'https://localhost:5001/api/answers';
+const urlGetQuiz = 'https://atquiz-api.herokuapp.com/api/questionnaires';
+const urlPostAnswers = 'https://atquiz-api.herokuapp.com/api/answers';
 let latitude = 0;
 let longitude = 0;
 

@@ -1,7 +1,7 @@
 const id = location.search.split('=')[1];
 const questionnaireId = parseInt(id);
-const url = 'https://localhost:5001/api/answers/questionnaires';
-const urlQuiz = 'https://localhost:5001/api/questionnaires/';
+const url = 'https://atquiz-api.herokuapp.com/api/answers/questionnaires';
+const urlQuiz = 'https://atquiz-api.herokuapp.com/api/questionnaires/';
 
 function getQuestionnaries() {
   fetch(urlQuiz + id)

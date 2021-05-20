@@ -1,4 +1,4 @@
-const url = 'https://localhost:5001/api/questionnaires';
+const url = 'https://atquiz-api.herokuapp.com/api/questionnaires';
 
 function getQuestionnaries(){
   fetch(url)
@@ -12,7 +12,7 @@ getQuestionnaries();
 const showQuestionnaries = (data) => {
   const el = document.querySelector('#questionnaries');
   if(data == ''){
-    return el.innerHTML = "<h5>Nenhuma pergunta cadastrada</h5>"
+    return el.innerHTML = "<h4>Nenhuma pergunta cadastrada!</h4>"
   }
   
   data.forEach(element => {
@@ -37,9 +37,9 @@ const showQuestionnaries = (data) => {
 }
 
 function answerQuiz(id){
-  window.location.href = `../src/screens/answers.html?id=${id}`;
+  window.location.href = `./screens/answers.html?id=${id}`;
 } 
 
 function showQuiz(id){
-  window.location.href = `../src/screens/showQuiz.html?id=${id}`;
+  window.location.href = `./screens/showQuiz.html?id=${id}`;
 }
